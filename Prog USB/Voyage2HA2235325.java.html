@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Voyage2HA2235325.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #8c8c8c; font-style: italic;}
+.s1 { color: #080808;}
+.s2 { color: #0033b3;}
+.s3 { color: #1750eb;}
+.s4 { color: #067d17;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Voyage2HA2235325.java</font>
+</center></td></tr></table>
+<pre><span class="s0">/* 
+Cours : 420-201 – Introduction à la programmation 
+Groupe : 2 
+Nom : Houde 
+Prénom : Antoine 
+DA : 2235325 
+*/</span>
+
+<span class="s2">public class </span><span class="s1">Voyage2HA2235325 {</span>
+    <span class="s2">public </span><span class="s1">Voyage2HA2235325() {</span>
+
+
+
+
+
+        <span class="s1">testerAfficherInfoVoyage();</span>
+        <span class="s1">testerAfficherInfoVoyage();</span>
+        <span class="s1">testerAfficherInfoVoyage();</span>
+
+        <span class="s1">lireDouble();</span>
+        <span class="s1">lireInfoVoyage();</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">donnéeLitresEssence(</span><span class="s2">double </span><span class="s1">litresEssence) {</span>
+        <span class="s2">return </span><span class="s1">litresEssence;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">donnéeDistanceKm(</span><span class="s2">double </span><span class="s1">distanceKm) {</span>
+        <span class="s2">return </span><span class="s1">distanceKm;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">donnéePrixEssence(</span><span class="s2">double </span><span class="s1">prixEssence) {</span>
+        <span class="s2">return </span><span class="s1">prixEssence;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">donnéeTempsHeure(</span><span class="s2">double </span><span class="s1">tempsHeure) {</span>
+        <span class="s2">return </span><span class="s1">tempsHeure;</span>
+    <span class="s1">}</span>
+
+
+    <span class="s2">private double </span><span class="s1">consommationAu100Km(</span><span class="s2">double </span><span class="s1">litresEssence, </span><span class="s2">double </span><span class="s1">distanceKm) {</span>
+        <span class="s1">litresEssence = donnéeLitresEssence(</span><span class="s3">30</span><span class="s1">);</span>
+        <span class="s1">distanceKm = donnéeDistanceKm(</span><span class="s3">200</span><span class="s1">);</span>
+        <span class="s2">double </span><span class="s1">consommation;</span>
+
+        <span class="s1">consommation = (</span><span class="s3">100 </span><span class="s1">* litresEssence) / distanceKm;</span>
+        <span class="s2">return </span><span class="s1">consommation;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">vitesseMoy(</span><span class="s2">double </span><span class="s1">tempsHeure, </span><span class="s2">double </span><span class="s1">distanceKm) {</span>
+        <span class="s1">tempsHeure = donnéeTempsHeure(</span><span class="s3">5</span><span class="s1">);</span>
+        <span class="s1">distanceKm = donnéeDistanceKm(</span><span class="s3">200</span><span class="s1">);</span>
+        <span class="s2">double </span><span class="s1">vitesseMoy;</span>
+
+        <span class="s1">vitesseMoy = distanceKm / tempsHeure;</span>
+        <span class="s2">return </span><span class="s1">vitesseMoy;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private double </span><span class="s1">prixVoyage(</span><span class="s2">double </span><span class="s1">litresEssence, </span><span class="s2">double </span><span class="s1">prixEssence) {</span>
+        <span class="s1">litresEssence = donnéeLitresEssence(</span><span class="s3">30</span><span class="s1">);</span>
+        <span class="s1">prixEssence = donnéePrixEssence(</span><span class="s3">2.6</span><span class="s1">);</span>
+        <span class="s2">double </span><span class="s1">prixVoyage;</span>
+
+        <span class="s1">prixVoyage = litresEssence * prixEssence;</span>
+        <span class="s2">return </span><span class="s1">prixVoyage;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private void </span><span class="s1">afficherInfoVoyage(</span><span class="s2">double </span><span class="s1">distanceKm, </span><span class="s2">double </span><span class="s1">tempsHeure, </span><span class="s2">double </span><span class="s1">prixEssence, </span><span class="s2">double </span><span class="s1">litresEssence) {</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;******************************************************************&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Vous avez parcouru &quot; </span><span class="s1">+ distanceKm + </span><span class="s4">&quot; km en &quot; </span><span class="s1">+ tempsHeure + </span><span class="s4">&quot; heures.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Le prix de l'essence est de $&quot; </span><span class="s1">+ prixEssence + </span><span class="s4">&quot;.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Vous avez utilisé &quot; </span><span class="s1">+ litresEssence + </span><span class="s4">&quot; litres d'essence.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;La vitesse moyenne de la voiture est de : &quot; </span><span class="s1">+ vitesseMoy(tempsHeure, distanceKm) +</span><span class="s4">&quot; km/heure.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Cette voiture a une consommation moyenne de : &quot; </span><span class="s1">+ consommationAu100Km(litresEssence, distanceKm ) + </span><span class="s4">&quot; litres/100 km.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Le voyage a coûté $&quot; </span><span class="s1">+ prixVoyage(litresEssence,prixEssence) + </span><span class="s4">&quot;.&quot;</span><span class="s1">);</span>
+
+        <span class="s1">System.out.println(</span><span class="s4">&quot;******************************************************************&quot;</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private void </span><span class="s1">testerAfficherInfoVoyage() {</span>
+        <span class="s1">afficherInfoVoyage(</span><span class="s3">12</span><span class="s1">, </span><span class="s3">2</span><span class="s1">, </span><span class="s3">3</span><span class="s1">, -</span><span class="s3">4</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s2">private void </span><span class="s1">lireDouble() {</span>
+
+    <span class="s1">}</span>
+
+    <span class="s2">private void </span><span class="s1">lireInfoVoyage() {</span>
+
+    <span class="s1">}</span>
+
+    <span class="s2">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s2">new </span><span class="s1">Voyage2HA2235325();</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

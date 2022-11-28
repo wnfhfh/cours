@@ -79,14 +79,14 @@ public class TableauObjet {
     }
 
     public Object remove(int emplacement) {
-        Object[] tabObjectRaccourci = new Object[tabObject.length - 1];
+        Object[] tabObjectRaccourci = new Object[tabObject.length];
         for (int i = 0; i < emplacement; i++) {
             tabObjectRaccourci[i] = tabObject[i];
         }
         for (int i = emplacement; i < tabObjectRaccourci.length; i++) {
             tabObjectRaccourci[i] = tabObject[i + 1];
         }
-        double variableRetiree = (double) tabObject[emplacement];
+        Object variableRetiree = tabObject[emplacement];
         tabObject = tabObjectRaccourci;
         return variableRetiree;
     }

@@ -17,10 +17,10 @@ public class PaquetTest {
         explicationsDesTests();
 
         tester_unPaquetA52Cartes();
-//        tester_unPaquetOrdonneEstOrdonne();
-//        tester_onPeutPigerSeulement52CartesPeuImporteLeTypeDePaquet();
-//        tester_onNAPas2CartesPareillesDansUnPaquetMelange(10);
-//        tester_unPaquetMelangeEstBienMelange(10);
+        tester_unPaquetOrdonneEstOrdonne();
+        tester_onPeutPigerSeulement52CartesPeuImporteLeTypeDePaquet();
+        tester_onNAPas2CartesPareillesDansUnPaquetMelange(10);
+        tester_unPaquetMelangeEstBienMelange(10);
         tester_toStringRetouneUneStrDesCartesDuPaquet();
     }
 

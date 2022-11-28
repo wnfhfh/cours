@@ -44,14 +44,16 @@ public class Paquet {
 //        }
     }
 
-    public Object piger() {
+    public Carte piger() {
 
         if (compteurPige == 0) {
             melanger();
         }
         if (compteurPige <= 52) {
-            return paquet.remove(compteurPige);
+            compteurPige++;
+            return (Carte) paquet.remove(compteurPige);
         }
+        compteurPige++;
         return null;
     }
 
